@@ -1,12 +1,26 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
+gem 'nokogiri'
+gem 'faker'
+gem 'bcrypt-ruby'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'annotate'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+end
+
+group :production do
+  gem 'pg'
 end
 
 
